@@ -1,17 +1,39 @@
 # Arduino library for the Apple Remote control
 
-The primary purpose of this library is to emit [Apple Remote][1] infrared
-pulses using an Arduino-compatible board and an IR LED.
+The [Apple Remote][1] is a remote control device that can be used to send
+instructions to a variety of Apple products, such as the Apple TV.
 
-This library can also recognize [Apple Remote][1] pulses with a little help
-from [IRDump][2] and an IR receiver.
+The primary purpose of this library is to emit [Apple Remote][1] infrared
+pulses that mimic those produced by the [Apple Remote][1] using an
+Arduino-compatible board and an IR LED
+
+![apple-remote](https://cloud.githubusercontent.com/assets/385670/8023793/26128b18-0ce0-11e5-8671-54fcc06c3e75.jpg)
+
+This Arduino library can also recognize [Apple Remote][1] pulses with a little
+help from [IRDump][2] and an IR receiver.
 
 ## Sending a pulse
+
+### Hardware
+
+1. An Arduino board
+2. An IR LED
+3. A 220 ohm resistor
+
+### Instructions
+
+1. Connect the short leg of the IR LED to the Arduino's GND through the 220 ohm
+   resistor.
+2. Connect the other leg to the the Arduino's digital pin #3.
+3. Bend the LED gently so its top faces an Apple device with an IR sensor, such
+   an Apple TV.
+
+### Code
 
 ```arduino
 #include <AppleRemote.h>
 
-// The PWM~ PIN number that is connected to an IR LED
+// PWM~ PIN (an IR LED)
 #define PIN_IR_OUTPUT 3
 
 AppleRemote *appleRemote;
@@ -23,6 +45,8 @@ void setup() {
 }
 
 void loop() {
+  // Sends the IR signal that corresponds to the menu button in the Apple
+  // Remote.
   appleRemote->Menu();
   delay(10000);
 }

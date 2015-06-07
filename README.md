@@ -52,6 +52,29 @@ void loop() {
 }
 ```
 
+## Available control codes
+
+```c++
+class AppleRemote {
+private:
+  /* Omitted */
+
+public:
+  AppleRemote(int pin, int model);
+
+  void Menu();
+  void Right();
+  void Left();
+  void Up();
+  void Down();
+  void Play();
+  void Center();
+  void Repeat();
+
+  int Match(unsigned int *);
+};
+```
+
 ## How to install
 
 Create new a folder named `MakerWorkshop` within the Arduino's library folder.

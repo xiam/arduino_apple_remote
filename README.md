@@ -1,4 +1,4 @@
-# Arduino library for the Apple Remote control
+# Arduino library for the Apple Remote
 
 The [Apple Remote][1] is a remote control device that can be used to send
 instructions to a variety of Apple products, such as the Apple TV.
@@ -8,27 +8,6 @@ instructions to a variety of Apple products, such as the Apple TV.
 The primary purpose of this library is to emit [Apple Remote][1] infrared
 pulses that mimic those produced by the [Apple Remote][1] using an
 Arduino-compatible board and an IR LED
-
-This Arduino library can also recognize [Apple Remote][1] pulses send by an
-actual control with a little help from [IRDump][2] and an IR receiver.
-
-## Sending a pulse
-
-### Hardware
-
-1. An Arduino board
-2. An IR LED
-3. A 220 ohm resistor
-
-### Instructions
-
-1. Connect the short leg of the IR LED to the Arduino's GND through the 220 ohm
-   resistor.
-2. Connect the other leg to the the Arduino's digital pin #3.
-3. Bend the LED gently so its top faces an Apple device with an IR sensor, such
-   an Apple TV.
-
-### Code
 
 ```arduino
 #include <AppleRemote.h>
@@ -52,7 +31,10 @@ void loop() {
 }
 ```
 
-## Available control codes
+This Arduino library can also recognize [Apple Remote][1] pulses sent by an
+actual controller with a little help from [IRDump][2] and an IR receiver.
+
+## Usage
 
 ```c++
 class AppleRemote {
@@ -75,6 +57,10 @@ public:
 };
 ```
 
+## Example project
+
+See the [Apple Remote example][3] for a fully working example project.
+
 ## How to install
 
 Create new a folder named `MakerWorkshop` within the Arduino's library folder.
@@ -88,11 +74,7 @@ to `arduino_apple_remote` and put it into your recently created `MakerWorkshop`
 folder.
 
 That's all! this library should be ready to use in your projects now. See the
-Arduino's documentation on [importing libraries][3] whenever you're in doubt.
-
-## Quick start
-
-See the [example project][1] for a quick start and wiring diagrams.
+Arduino's documentation on [importing libraries][5] whenever you're in doubt.
 
 ## License
 
@@ -119,7 +101,8 @@ See the [example project][1] for a quick start and wiring diagrams.
 > OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 > WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-[1]: https://github.com/makerworkshop/arduino_apple_remote_example
+[1]: http://en.wikipedia.org/wiki/Apple_Remote
 [2]: https://github.com/makerworkshop/arduino_irdump
-[3]: http://www.arduino.cc/en/guide/libraries
+[3]: https://github.com/makerworkshop/arduino_apple_remote_example
 [4]: https://github.com/makerworkshop/arduino_apple_remote/archive/master.zip
+[5]: http://www.arduino.cc/en/guide/libraries

@@ -63,18 +63,9 @@ See the [Apple Remote example][3] for a fully working example project.
 
 ## How to install
 
-Create new a folder named `MakerWorkshop` within the Arduino's library folder.
-If you're on a Mac it should be `Documents/Arduino/libraries/` on Linux it
-probably would be in `/usr/share/arduino/libraries/`. If that folder already
-exists you don't need to create it again.
+Download the latest [.ZIP package][4] and follow the official instructions on
+[importing a .ZIP library][5].
 
-Download and uncompress the latest [.ZIP package][4], a folder named
-`arduino_apple_remote-master` will be created, rename the uncompressed folder
-to `arduino_apple_remote` and put it into your recently created `MakerWorkshop`
-folder.
-
-That's all! this library should be ready to use in your projects now. See the
-Arduino's documentation on [importing libraries][5] whenever you're in doubt.
 
 ## License
 
@@ -105,4 +96,4 @@ Arduino's documentation on [importing libraries][5] whenever you're in doubt.
 [2]: https://github.com/makerworkshop/arduino_irdump
 [3]: https://github.com/makerworkshop/arduino_apple_remote_example
 [4]: https://github.com/makerworkshop/arduino_apple_remote/archive/master.zip
-[5]: http://www.arduino.cc/en/guide/libraries
+[5]: https://www.arduino.cc/en/Guide/Libraries

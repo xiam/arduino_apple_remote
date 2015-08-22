@@ -94,6 +94,6 @@ Download the latest [.ZIP package][4] and follow the official instructions on
 
 [1]: http://en.wikipedia.org/wiki/Apple_Remote
 [2]: https://github.com/makerworkshop/arduino_irdump
-[3]: https://github.com/makerworkshop/arduino_apple_remote_example
+[3]: examples/SendAndReceiveButtonCodes
 [4]: https://github.com/makerworkshop/arduino_apple_remote/archive/master.zip
 [5]: https://www.arduino.cc/en/Guide/Libraries

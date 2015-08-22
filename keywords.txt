@@ -1,0 +1,11 @@
+AppleRemote   KEYWORD1
+
+Menu          KEYWORD2
+Right         KEYWORD2
+Left          KEYWORD2
+Up            KEYWORD2
+Down          KEYWORD2
+Play          KEYWORD2
+Center        KEYWORD2
+Repeat        KEYWORD2
+Match         KEYWORD2
